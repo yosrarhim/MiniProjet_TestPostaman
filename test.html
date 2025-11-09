@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API Test Page</title>
+</head>
+<body>
+  <h1>Test API</h1>
+  <button onclick="testApi()">Test GET Request</button>
+  <button onclick="sendData()">Send POST Data</button>
+  <p id="result"></p>
+
+  <script>
+    async function testApi() {
+      const response = await fetch('http://localhost:3000/api/test');
+      const data = await response.json();
+      document.getElementById('result').innerText = JSON.stringify(data);
+    }
+
+    async function sendData() {
+      const response = await fetch('http://localhost:3000/api/data', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ key: 'value' })
+      });
+      const data = await response.json();
+      document.getElementById('result').innerText = JSON.stringify(data);
+    }
+  </script>
+</body>
+</html>
