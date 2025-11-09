@@ -1,8 +1,5 @@
 
 # MiniProjet_TestPostman
-Ce projet est un mini-projet développé pour tester et apprendre l'utilisation de **Postman** pour l'envoi de requêtes HTTP et la communication avec des API.  
-Il inclut des exemples simples de requêtes GET, POST, PUT et DELETE vers une API de test.
-
 ## Description
 Ce projet est un mini-projet développé pour tester et apprendre l'utilisation de **Postman** pour l'envoi de requêtes HTTP et la communication avec des API.  
 Il inclut des exemples simples de requêtes GET, POST, PUT et DELETE vers une API de test.
